@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import API from "../api";
@@ -58,6 +59,11 @@ function Login() {
 
           Login
         </button>
+
+        <p style={{ marginTop: "10px", textAlign: "center" }}>
+  Don't have an account?{" "}
+  <Link to="/register">Register here</Link>
+</p>
       </div>
     </div>
   );
