@@ -17,7 +17,7 @@ function Register() {
       const res = await API.post("/auth/register", form);
 
       alert("Registration successful!");
-      navigate("/");   // Go to login page
+      navigate("/login");   // Go to login page
 
     } catch (error) {
       alert(error.response?.data || "Registration failed");
