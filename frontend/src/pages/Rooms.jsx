@@ -22,7 +22,7 @@ function Rooms() {
 
   useEffect(() => {
 
-  const socket = new SockJS("http://localhost:8080/ws");
+  const socket = new SockJS("https://hostel-project-yplz.onrender.com/ws");
 
   const stompClient = new Client({
     webSocketFactory: () => socket,
