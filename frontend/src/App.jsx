@@ -20,8 +20,9 @@ function App() {
       <Routes>
 
         {/* ================= PUBLIC ROUTES ================= */}
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Navigate to="/register" />} />
+<Route path="/register" element={<Register />} />
+<Route path="/login" element={<Login />} />
 
         {/* ================= PRIVATE ROUTES ================= */}
 
